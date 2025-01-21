@@ -1,7 +1,7 @@
 import numpy as np
 import fractions
 
-def simpsonverfahren(f, a, b, n, display="default"):
+def simpsonverfahren(f, a, b, n):
     """
     Berechnet das bestimmte Integral von f(x) von a bis b
     
@@ -14,18 +14,11 @@ def simpsonverfahren(f, a, b, n, display="default"):
         Obere Grenze
     n : int
         Anzahl der Teilintervalle/Doppelsäulen (Stützstellen - 1)
-    display : str
-        Anzeigeoptionen für die Rückgabe
-        "default" - Standardanzeige
-        "fraction" - Bruchan
     
     Rückgabe:
     float
         Näherung des bestimmten Integrals
     """
-    if display is "fraction":
-        np.set_printoptions(formatter={'all':lambda x: str(fractions.Fraction(x).limit_denominator())})
-    
     h = (b - a) / (2 * n) # Schrittweite (2n wegen Doppelsäulen)
     x = np.linspace(a, b, 2 * n + 1) # Stützstellen
     y = f(x) 

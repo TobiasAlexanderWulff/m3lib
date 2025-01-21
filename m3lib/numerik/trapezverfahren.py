@@ -1,7 +1,7 @@
 import numpy as np
 import fractions
 
-def trapezverfahren(f, a, b, n, display="default"):
+def trapezverfahren(f, a, b, n):
     """
     Berechnet das bestimmte Integral von f(x) von a bis b
     
@@ -14,17 +14,11 @@ def trapezverfahren(f, a, b, n, display="default"):
         Obere Grenze
     n : int
         Anzahl der Teilintervalle/Säulen (Stützstellen - 1)
-    display : str
-        Anzeigeoptionen für die Rückgabe
-        "default" - Standardanzeige
-        "fraction" - Bruchan
     
     Rückgabe:
     float
         Näherung des bestimmten Integrals
     """
-    if display is "fraction":
-        np.set_printoptions(formatter={'all':lambda x: str(fractions.Fraction(x).limit_denominator())})
     h = (b - a) / n # Schrittweite
     x = np.linspace(a, b, n + 1) # Stützstellen
     y = f(x) 
