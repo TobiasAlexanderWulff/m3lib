@@ -6,3 +6,7 @@ m3lib.egg-info/PKG-INFO
 m3lib.egg-info/SOURCES.txt
 m3lib.egg-info/dependency_links.txt
 m3lib.egg-info/top_level.txt
+m3lib/functions/__init__.py
+m3lib/komplex/__init__.py
+m3lib/numerik/__init__.py
+m3lib/numerik/trapezverfahren.py

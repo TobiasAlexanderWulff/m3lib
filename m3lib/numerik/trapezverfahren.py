@@ -21,4 +21,4 @@ def trapezverfahren(f, a, b, n):
     h = (b - a) / n # Schrittweite
     x = np.linspace(a, b, n + 1) # Stützstellen
     y = f(x) 
-    return h * (y[0] / 2 + np.sum(y[1:-1]) + y[-1] / 2)
+    return (h / 2) * (y[0] + y[-1] + 2 * np.sum(y[1:-1]))
