@@ -45,4 +45,4 @@ def max_fehler_simpsonverfahren(f4, a, b, n):
     """
     h = (b - a) / (2 * n) # Schrittweite (2n wegen Doppelsäulen)
     x = np.linspace(a, b, 2 * n + 1) # Stützstellen
-    return ((b - a) / 180) * h**4 * np.sum(f4(x))
+    return ((b - a) / 180) * h**4 * np.max(np.abs(f4(x)))
