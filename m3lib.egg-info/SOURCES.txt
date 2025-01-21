@@ -1,0 +1,8 @@
+LICENSE.txt
+README.rst
+setup.py
+m3lib/__init__.py
+m3lib.egg-info/PKG-INFO
+m3lib.egg-info/SOURCES.txt
+m3lib.egg-info/dependency_links.txt
+m3lib.egg-info/top_level.txt

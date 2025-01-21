@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: m3lib
+Version: 0.1
+Summary: Implementation of various mathematical functions
+Home-page: https://github.com/tobiasalexanderwulff/m3lib
+Author: Tobias Alexander Wulff
+Author-email: tobias.wulff@live.de
+License: MIT
+Keywords: math,functions,implementation,numerical,algorithms,complex,numbers
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: summary
