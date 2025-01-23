@@ -24,7 +24,7 @@ def trapezverfahren(f, a, b, n):
     y = f(x) 
     return (h / 2) * (y[0] + y[-1] + 2 * np.sum(y[1:-1]))
 
-def max_feher_trapezverfahren(f2, a, b, n):
+def max_fehler_trapezverfahren(f2, a, b, n):
     """
     Berechnet den maximalen Fehler des Trapezverfahrens
     
